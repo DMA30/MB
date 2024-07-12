@@ -1,15 +1,10 @@
-import LoginForm from "./LoginForm";
+import * as React from "react";
 import Main from "./Main";
-import Header from "./components/Header";
 
 const App = () => {
-return (
-    <div>
-        <Header />
-        <LoginForm />
-        
-    </div>
-)
+    return (
+        <Main />
+    )
 }
 
 export default App;

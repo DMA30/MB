@@ -1,16 +1,16 @@
-const Main = () => {
+import Layout from "antd/es/layout/layout";
+import AppSider from "./components/layout/AppSider";
+import React from "react";
+import AppContent from "./components/layout/AppContent";
+import AppHeader from "./components/layout/AppHeader";
+export default function Main() {
     return (
-        <div
-        style={{
-          position: 'fixed',
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-          backgroundColor: `#f9fafd`,
-        }}
-      />
+        <Layout>
+            <AppHeader />
+            <Layout>
+                {/* <AppSider /> */}
+                <AppContent />
+            </Layout>
+        </Layout>
     )
 }
-
-export default Main;
